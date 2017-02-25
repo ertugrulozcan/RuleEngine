@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rule Name="TestRule1">
+	<Rule.Triggers>
+		<Trigger>
+			<Trigger.Conditions>
+				<Condition Property="Case1" Value="True" />
+				<Condition Property="Case2" Value="True" />
+				<Condition Property="Case3" Value="False" />
+			</Trigger.Conditions>
+			<Trigger.Actions>
+				<Action Method="RuleTest" />
+			</Trigger.Actions>
+		</Trigger>
+	
+		<Trigger>
+			<Trigger.Conditions>
+				<Condition Property="ContractValidity" Value="ImmediateOrCancel" />
+				<Condition Property="OrderType" Value="Market" />
+			</Trigger.Conditions>
+			<Trigger.Actions>
+				<Action Method="UpdateUI" />
+			</Trigger.Actions>
+		</Trigger>
+	</Rule.Triggers>
+</Rule>
