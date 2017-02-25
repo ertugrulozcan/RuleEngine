@@ -13,18 +13,18 @@ Sample RuleSet Description;
 				<Condition Property="Number" Value="12.01" Type="Numeric" Method="Greater" />
 				<Condition Property="Floating" Value="123.456" Type="Numeric" />
 			</Rule.Conditions>
-			
+
 			<Rule.Setters>
 				<Setter Property="TestObject.TestString" Value="Rule Engine" />
 				<Setter Property="TestObject.TestBool" Value="True" />
 			</Rule.Setters>
-			
+
 			<Rule.Action Method="TestObject.TestMethod">
 				<Action.Parameters>
 					<Parameter>Test</Parameter>
 				</Action.Parameters>
 			</Rule.Action>
-		
+
 			<Rule.Callback Method="TestObject.TestMethod">
 				<Action.Parameters>
 					<Parameter>Test</Parameter>
