@@ -3,7 +3,6 @@ Basic .Net Rule Engine
 
 Sample RuleSet Description;
 
-<?xml version="1.0" encoding="utf-8" ?>
 <RuleSet Name="RuleSet1">
 	<RuleSet.Rules>
 		<Rule Name="Rule1">
